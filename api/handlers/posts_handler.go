@@ -11,13 +11,13 @@ import (
 func CreatePostForHandler(c *gin.Context) {
 	user, err := database.GetUserFromContext(c.Request.Context())
 	if err != nil {
-		// Обработка ошибки, например, отправка HTTP-ответа с ошибкой
+		
 		return
 	}
 
 	newPost := database.Post{
 		UserID: user.ID,
-		// Другие поля поста
+		
 	}
 
 	createdPost, err := database.CreatePost(newPost)
