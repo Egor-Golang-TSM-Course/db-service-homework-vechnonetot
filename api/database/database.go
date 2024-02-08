@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-// User - пример структуры пользователя
+
 type User struct {
 	ID    int
 	Name  string
